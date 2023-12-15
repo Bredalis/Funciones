@@ -1,7 +1,6 @@
 
 # Modulo y libreria
 
-from Funcion import *
 import math
 
 # Mostrar funciones de math
