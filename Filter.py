@@ -1,8 +1,8 @@
 
-print("Agrupador de edades menores")
+print('Agrupador de edades menores')
 
 lista_edades = []
-pregunta = ""
+pregunta = ''
 
 """
 Bucle que le pide 
@@ -10,23 +10,22 @@ al usuario que ingrese
 las edades que quiera
 """
 
-while pregunta != "No":
+while pregunta != 'No':
 
 	try:
-		elementos = int(input("Introduce edad: "))
+		elementos = int(input('Introduce edad: '))
 		lista_edades.append(elementos)
 
 	except ValueError:
-		print("Solo numeros")
+		print('Solo numeros')
 
 	finally:
-		pregunta = input("¿Quieres seguir ingresando edades? (Si/No): ").capitalize()
+		pregunta = input('¿Quieres seguir ingresando edades? (Si/No): ').capitalize()
 
-def Edades_Menores(edades):
+def edades_menores(edades):
 	return edades <= 18
 
 # Filtrando las edades menores
 
-filtro = list(filter(Edades_Menores, lista_edades))
-
-print("Edades Menores:", filtro)
+filtro = list(filter(edades_menores, lista_edades))
+print('Edades Menores:', filtro)

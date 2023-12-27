@@ -1,15 +1,15 @@
 
-def Decorador(espacio):
-	def Funcion_Interna(base, exponente):
+def decorador(espacio):
+	def funcion_interna(base, exponente):
 
-		print("Inicio")
+		print('Inicio')
 		espacio(base, exponente)
-		print("Final")
+		print('Final')
 
-	return Funcion_Interna
+	return funcion_interna
 
-@Decorador
-def Potencia(base, exponente):
+@decorador
+def potencia(base, exponente):
 	print(pow(base, exponente))
 
-Potencia(base = 1, exponente = 8)
+potencia(base = 1, exponente = 8)

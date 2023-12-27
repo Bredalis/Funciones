@@ -1,15 +1,15 @@
 
-def Decorador(espacio):
-	def Funcion_Interna():
+def decorador(espacio):
+	def funcion_interna():
 
-		print("Inicio")
+		print('Inicio')
 		espacio()
-		print("Final")
+		print('Final')
 
-	return Funcion_Interna
+	return funcion_interna
 
-@Decorador
-def Suma():
+@decorador
+def suma():
 	print(1 + 2)
 
-Suma()
+suma()
